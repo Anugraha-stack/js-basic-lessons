@@ -1,0 +1,312 @@
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Spartan", sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    padding: 32px 11.389vw 0;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .container {
+    max-width: 1110px;
+  }
+  
+  /* ------ */
+  /* Styles */
+  /* ------ */
+  /* ********** .top ********** */
+  /* ************************** */
+  .top__text h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.71429px;
+    color: #512051;
+  }
+  
+  .top__text p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    color: #927b91;
+  }
+  
+  .top__c-stars {
+    background: #f7f2f7;
+    border-radius: 8px;
+  }
+  
+  .top__c-stars p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #512051;
+  }
+  
+  /* ********** .bottom ********** */
+  /* ***************************** */
+  .bottom__cards {
+    background: #512051;
+    border-radius: 8px;
+    padding: 40px 30px 37px;
+    max-width: 350px;
+  }
+  
+  .bottom__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 28px;
+  }
+  
+  .bottom__top img {
+    border-radius: 50%;
+    width: 40px;
+  }
+  
+  .bottom__person {
+    margin-left: 24px;
+  }
+  
+  .bottom__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+  
+  .bottom__position {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ee69a4;
+  }
+  
+  .bottom__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.232143px;
+    color: #ffffff;
+  }
+  
+  /* -------------- */
+  /* Desktop Design */
+  /* -------------- */
+  /* ********** .top ********** */
+  /* ************************** */
+  .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 72px;
+  }
+  
+  .top__text {
+    max-width: 450px;
+  }
+  
+  .top__text h1 {
+    margin-bottom: 12px;
+  }
+  
+  .top__rated {
+    width: 540px;
+    display: -ms-grid;
+    display: grid;
+  }
+  
+  .top__c-stars + .top__c-stars {
+    margin-top: 16px;
+  }
+  
+  .top__c-stars {
+    padding: 20px 0;
+    width: 445px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .top__c-stars .top__stars {
+    margin-left: 31px;
+  }
+  
+  .top__c-stars p {
+    margin-left: 33px;
+  }
+  
+  .top__c-stars:nth-child(2) {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  
+  .top__c-stars:nth-child(3) {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  
+  /* ********** .bottom ********** */
+  /* ***************************** */
+  .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 2.0833vw;
+    min-height: 266px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  @media (min-width: 1441px) {
+    .bottom {
+      gap: 30px;
+    }
+  }
+  
+  .bottom__cards:nth-child(2) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  
+  .bottom__cards:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  
+  /* ------ */
+  /* Medias */
+  /* -------*/
+  @media (max-width: 1437px) {
+    body {
+      padding-top: 11.389vw;
+    }
+  }
+  
+  @media (max-width: 1180px) {
+    .top {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .top__text {
+      text-align: center;
+      margin-bottom: 62px;
+    }
+    .top__text h1 {
+      margin-bottom: 25px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .top__rated {
+      width: 100%;
+    }
+    .top__text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    .top__text p {
+      max-width: 320px;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .container {
+      padding: 34px 24px 0;
+    }
+    .top {
+      margin-bottom: 50px;
+    }
+    .top__text {
+      margin-bottom: 40px;
+    }
+    .top__text h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.14286px;
+      color: #512051;
+      margin-bottom: 22px;
+    }
+    .top__c-stars {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 16px 0;
+      min-width: 326px;
+      width: 100%;
+    }
+    .top__c-stars .top__stars {
+      margin: 0;
+      margin-bottom: 12px;
+    }
+    .top__c-stars p {
+      margin: 0;
+    }
+    .bottom {
+      gap: 16px;
+      margin-bottom: 55px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
